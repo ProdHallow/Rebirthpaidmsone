@@ -1,7 +1,3 @@
-getgenv().Name = "Thx for buying😘😘"--Name above head
-
-task.wait(1)
-
 local virtual = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:Connect(function()
     virtual:CaptureController()
@@ -68,11 +64,11 @@ Character.Head.CustomPlayerTag.MinerRank.Text = "G.O.A.T🐐"
                             wait(1);
                             vuAF:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame);
                         end);
-                        local Remote
-
+                        local Remote;
                         Workspace.Collapsed.Changed:connect(function()
-                        if Workspace.Collapsed.Value == true then
-                            end
+                            if (Workspace.Collapsed.Value == true) then
+                        end);
+                        do
                             local Data = getsenv(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ClientScript).displayCurrent;
                             local Values = getupvalue(Data, 8);
                             Remote = Values.RemoteEvent;
